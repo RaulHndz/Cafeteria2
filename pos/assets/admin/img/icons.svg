@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="Documento nuevo 1">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="5.6"
+     inkscape:cx="223.35801"
+     inkscape:cy="948.94798"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1366"
+     inkscape:window-height="706"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:snap-bbox="false"
+     inkscape:object-paths="true"
+     inkscape:object-nodes="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-midpoints="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-center="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true">
+    <sodipodi:guide
+       orientation="0,1"
+       position="285.87317,931.36065"
+       id="guide2989" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       sodipodi:type="star"
+       style="fill:#ff0000;fill-opacity:1;stroke:none"
+       id="path2987"
+       sodipodi:sides="5"
+       sodipodi:cx="64.649765"
+       sodipodi:cy="71.504059"
+       sodipodi:r1="10.101525"
+       sodipodi:r2="5.0507627"
+       sodipodi:arg1="1.0471976"
+       sodipodi:arg2="1.6755161"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 69.700527,80.252237 -5.578711,-3.725084 -6.231291,2.483802 1.818849,-6.456784 -4.287811,-5.158773 6.702821,-0.265428 3.581278,-5.672099 2.323723,6.29274 6.501163,1.653223 -5.266682,4.154555 z"
+       inkscape:transform-center-x="-0.06067352"
+       inkscape:transform-center-y="-0.90672128"
+       transform="matrix(0.9963658,-0.08517737,0.08517737,0.9963658,199.78913,41.87951)"
+       inkscape:export-filename="E:\Portables\USBWebserver v8.6\root\cms\assets\admin\img\ic_default_active.png"
+       inkscape:export-xdpi="79.643524"
+       inkscape:export-ydpi="79.643524" />
+    <path
+       sodipodi:type="star"
+       style="fill:#cccccc;fill-opacity:1;stroke:none"
+       id="path2987-1"
+       sodipodi:sides="5"
+       sodipodi:cx="64.649765"
+       sodipodi:cy="71.504059"
+       sodipodi:r1="10.101525"
+       sodipodi:r2="5.0507627"
+       sodipodi:arg1="1.0471976"
+       sodipodi:arg2="1.6755161"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 69.700527,80.252237 -5.578711,-3.725084 -6.231291,2.483802 1.818849,-6.456784 -4.287811,-5.158773 6.702821,-0.265428 3.581278,-5.672099 2.323723,6.29274 6.501163,1.653223 -5.266682,4.154555 z"
+       inkscape:transform-center-x="-0.06067352"
+       inkscape:transform-center-y="-0.90672128"
+       transform="matrix(0.9963658,-0.08517737,0.08517737,0.9963658,168.33506,41.523542)"
+       inkscape:export-filename="E:\Portables\USBWebserver v8.6\root\cms\assets\admin\img\ic_default_inactive.png"
+       inkscape:export-xdpi="79.643524"
+       inkscape:export-ydpi="79.643524" />
+    <path
+       style="fill:#ff0000;fill-opacity:1;stroke:none"
+       d="m 170.55205,88.051203 0,0 2.79325,-4.754061 -5.65998,0 z"
+       id="rect3009"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="E:\Portables\USBWebserver v8.6\root\cms\assets\admin\img\ic_bullet_list.png"
+       inkscape:export-xdpi="111.30765"
+       inkscape:export-ydpi="111.30765" />
+  </g>
+</svg>

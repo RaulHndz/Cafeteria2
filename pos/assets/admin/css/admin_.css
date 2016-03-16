@@ -1,0 +1,393 @@
+﻿body 
+{
+    background-color: #F2F1EF;
+}
+a
+{
+    text-decoration: none;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+a:hover{text-decoration: none;}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt 
+{
+    white-space: normal;
+}
+
+.tiny-composer
+{
+    
+    position: absolute;
+    height:  60%;
+}
+.clear
+{
+    clear: both;
+    height: 5px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.left
+{
+    float: left;
+}
+.right
+{
+    float: right;
+}
+
+.button-box
+{
+    position: fixed;
+    left: 10%;
+    right: 10%;
+    bottom: 0px;
+    width:80%;
+    padding: 4px 30px 4px 30px;
+    color: #4D9DE0;
+    text-align: right;
+    background: #E8F5FB;
+}
+
+/*
+| -------------------------------------------------------------------
+| CUSTOM
+| -------------------------------------------------------------------
+*/
+.site-header
+{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 56px !important;
+	background-color: #47B0E2 !important;
+	color: #FFF;
+    box-shadow: 0 0 4px rgba(0,0,0,.1), 0 4px 8px rgba(0,0,0,.18);
+    border: 0px;
+    margin: auto;
+    text-align: center;
+    z-index: 1000;    
+}
+.site-header h2
+{
+    color: #FFF;
+    font-size: 18px;
+    line-height: 15px;
+    font-weight: bold;
+}
+#menu-button
+{
+	float: left;
+    margin-top: 10px;
+	background-image: url('../img/ic_menu_wht_1x.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 24px;
+	display: inline-block;
+	height: 24px;
+	opacity: 0.75;
+	padding: 16px 24px;
+	width: 24px;
+	cursor: pointer;
+	-webkit-user-drag: none;
+    z-index: 1001;
+}
+#menu-button:hover { opacity: 1; }
+.body-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: 0px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.content
+{
+    position:relative;
+    width: 80%;
+    min-height: 100%;
+    height: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 75px 30px 15px 30px;
+    background-color: #FFF;
+    border: 0px;
+    text-align: left;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.title
+{
+    width: 100%;
+    height: 50px;
+    border-bottom: solid 1px #CCCCCC;
+    line-height: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #4D9DE0;
+    padding: 0px 15px 0px 15px;
+    margin-bottom: 20px;
+}
+footer
+{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 20px;
+    background-color: #CCCCCC;
+    color: gray;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 20px;
+    font-size: 10px;
+    font-weight: bold;
+}
+/*
+| -------------------------------------------------------------------
+| SIDE BAR
+| -------------------------------------------------------------------
+*/
+#side-bar
+{
+    position: fixed;
+    top: 0px;
+    left: -250px;
+	width: 250px;
+	height: 100%;
+	color: #797979;
+    border: 0px;
+    opacity: 0;
+    background-color: #FFF;
+	z-index: 999;
+	padding-top: 55px;
+	box-shadow: 1px 2px 7px #CCCCCC;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+#side-bar-head
+{
+	width: 250px;
+	height: 100px;
+    padding: 7px;
+    background-color: #E67850;
+}
+#side-bar-head .user-photo
+{
+    background-color: rgba(0,0,0,0.1);
+    background-position: center;
+    background-size: 52px;
+	width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-image: url('../img/ic_action_person.png');
+}
+#side-bar-head .user-name
+{
+    float: left;
+    margin-left: 60px;
+    margin-top: -35px;
+    display: inline-block;
+    max-width: 185px;
+	font-size: 13px;
+	line-height: 22px;
+	font-weight: bold;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: rgba(0,0,0,0.1);
+    color: #FFF;
+}
+#side-bar-head #user-option
+{
+    position: absolute;
+    left: 67px;
+    top: 105px;
+    width: 170px;
+    z-index: 1004;
+    background: #FFF;
+    border-radius: 2px;
+    box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+    display: none;
+}
+#side-bar-head #user-option li
+{
+    line-height: 20px;
+    cursor: pointer;
+}
+#side-bar-head #user-option li:hover
+{
+    background-color: #4D9DE0;
+    border-radius: 2px;
+}
+#side-bar-head #user-option .no-image
+{
+    padding-left: 38px;
+    cursor: pointer;
+}
+#side-bar-head #user-option li a
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: gray;
+    padding: 7px;
+    text-decoration: none;
+}
+#side-bar-head #user-option li a:hover
+{
+    color: #FFF;
+}
+#side-bar-head .societies
+{
+    float: left;
+    margin-left: -7px;
+    margin-top: 13px;
+    width: 250px;
+    height: 30px;
+	font-size: 13px;
+    padding: 4px;
+	line-height: 22px;
+	font-weight: bold;
+    color: #FFF;
+    border: 0px;
+    border-radius: 2px;
+    background-color: rgba(0,0,0,0.1);
+}
+#side-bar-head .societies a
+{
+    color: #FFF;
+    text-decoration: none;
+}
+#side-bar .menu
+{
+	width: 250px;
+	height: 100%;
+	max-height: 63%;
+	padding: 0px;
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+#side-bar .menu .menu-option
+{
+	display: block;
+	width: 250px;
+	height: 57px;
+	cursor: pointer;
+    line-height: 57px;
+}
+#side-bar .menu .menu-option a
+{
+	display: inline-block;
+	width: 250px;
+	height: 57px;
+	
+}
+#side-bar .menu .menu-option .menu-label
+{
+    display: inline-block;
+    width: 190px;
+    height: 57px;
+    line-height: 57px;
+    font-weight: bold;
+    color: gray;
+}
+
+#side-bar .menu .menu-option:hover 
+{
+	background: #F2F1EF;
+	color: #F38546;
+    text-decoration: none !important;
+}
+#side-bar .menu .menu-option .icon
+{
+    float: left;
+    display: inline-block;
+    background-size: 40px !important;
+    width: 40px;
+    height: 40px;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background: gray;
+    -webkit-user-drag: none;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+/*
+| -------------------------------------------------------------------
+| FLOATING ACTION BUTTON
+| -------------------------------------------------------------------
+*/
+.fab-normal {
+    width: 56px;
+    height: 56px;
+    line-height: 56px;
+    position: fixed;
+    bottom: 30px;
+    right: 25px;
+    border: 0px;
+    background-color: #4D9DE0;
+    border-radius: 30px;
+    box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+    text-align: center;
+    cursor: pointer;
+    z-index: 1000;
+}
+.fab-mini-box
+{
+    width: auto;
+    height: auto;
+    bottom: 100px;
+    right: 32px;
+    position: fixed;
+    display: none;
+}
+.fab-container
+{
+    display: block;
+    width: auto;
+    height: auto;
+    border: 0px;
+    text-align: right;
+    margin-left: auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.fab-mini
+{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    border: 0px;
+    background-color: #F38546;
+    border-radius: 20px;
+    box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+    text-align: center;
+}
+.fab-mini:hover
+{
+    background: #F2783C;
+}
+.fab-mini-box .label
+{
+    display: inline-block;
+    margin-right: 7px;
+    background-color: rgba(0, 0, 0, 0.7);    
+    color: #FFF;
+    font-size: 12px;
+    padding: 5px;
+    box-shadow: 0 0 2px rgba(0,0,0,.14),0 2px 2px rgba(0,0,0,.28);
+    border-radius: 2px;
+}

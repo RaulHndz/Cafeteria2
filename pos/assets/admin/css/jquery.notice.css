@@ -1,0 +1,91 @@
+.notice-wrap
+{
+    position: fixed;
+    bottom: 15px;
+    left: 12%;
+    width: 250px;
+    z-index: 800;
+}
+* html .notice-wrap 
+{
+    position: absolute;
+}
+.notice-item 
+{
+    background: #FFF;
+    border-radius: 4px;
+    color: #000;
+    padding:12px;
+    font-size: 13px;
+    display: block;
+    position: relative;
+    margin: 0 0 12px 0;
+    box-shadow: 0 0 4px rgba(0,0,0,.1), 0 4px 8px rgba(0,0,0,.18);
+    border: solid 1px #BABABA;
+}
+.notice-item-close {
+    position: absolute;
+    font-family: Arial;
+    font-size: 17px;
+    font-weight: bold;
+    right: 4px;
+    top: -1px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+.notice-item-close:hover{opacity: 1;}
+
+.notice-success 
+{
+    background-color: #87D37C;
+    color: green;
+    border: solid 1px #7AB55C;
+}
+.notice-info{
+    background-color:#4DACC6;
+    color: #FFF;
+    border: solid 1px #4DACC6;
+}
+.notice-error {
+    background-color:#F05F40;
+    color: #FFF;
+    border: solid 1px #F05F40;
+}
+.notice-warn
+{
+    background-color:#FAD46B;
+    color: #000;
+    border: solid 1px #FAD46B;
+}
+
+/*
+| -------------------------------------------------------------------
+| FOR TABLET
+| -------------------------------------------------------------------
+*/
+@media (max-width: 800px) {
+    .notice-wrap
+    {
+        position: fixed;
+        bottom: 25px;
+        left: 25px;
+        width: 250px;
+        z-index: 800;
+    }
+}
+
+/*
+| -------------------------------------------------------------------
+| FOR CELLPHONE
+| -------------------------------------------------------------------
+*/
+@media (max-width: 500px) {
+    .notice-wrap
+    {
+        position: fixed;
+        bottom: 25px;
+        left: 25px;
+        width: 200px;
+        z-index: 800;
+    }
+}

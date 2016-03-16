@@ -1,0 +1,668 @@
+﻿*{
+    font-family: 'Ubuntu', sans-serif;
+}
+body {
+    background-color: #F2F1EF;
+}
+a
+{
+    text-decoration: none;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+a:hover{text-decoration: none;}
+a:visited {text-decoration: none;}
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: 0px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    display: inline-block;
+}
+
+.left {
+    float: left;
+}
+.right{
+    float: right;
+}
+.clear
+{
+    clear:both;
+    height: 5px;
+}
+.toolbar
+{
+    background-color: #EEEEEE;
+    border-radius: 4px;
+    padding: 7px 7px 7px 7px;
+    min-height: 45px;
+    text-align: left;
+}
+table{ background-color: #FFF !important; }
+.align-right{ text-align: right !important; }
+.align-parent-bottom{ position: absolute; bottom: 10px; left: 30px; right: 30px; margin-top: 45px; }
+.box-shadow{ box-shadow: 0 0 2px rgba(0,0,0,.1), 0 2px 4px rgba(0,0,0,.18); border-radius: 4px;}
+.no-shadow{ box-shadow: none;}
+
+.back-button, .back-button:active, .back-button:focus
+{
+    display: inline-block;
+    height: 35px;
+    width: auto;
+    background: url(../img/ic_arrow_back_black_18dp.png);
+    background-position: 5px;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    padding: 5px 10px 5px 37px;
+    margin-left: -16px;
+    color: #666666;
+    line-height: 25px;
+    border: solid 0px #F1F0EC;
+    border-radius: 5px;
+    text-decoration: none;
+
+    box-shadow: 0 0 1px rgba(0,0,0,.1), 0 1px 2px rgba(0,0,0,.18);
+}
+.back-button:hover
+{
+    box-shadow: 0 0 2px rgba(0,0,0,.1), 0 2px 4px rgba(0,0,0,.18);
+    color: #666666;
+}
+/*
+| -------------------------------------------------------------------
+| HEAD
+| -------------------------------------------------------------------
+*/
+.site-header
+{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 56px !important;
+    background-color: #47B0E2 !important;
+    color: #FFF;
+    box-shadow: 0 0 4px rgba(0,0,0,.1), 0 4px 8px rgba(0,0,0,.18);
+    border: 0px;
+    margin: auto;
+    text-align: center;
+    z-index: 1000; 
+}
+.site-header h2
+{
+    font-family: 'Ubuntu', sans-serif;
+    color: #FFF;
+    font-size: 18px;
+    line-height: 14px;
+    font-weight: bold;
+    margin-left: -40px;
+    text-space-collapse:preserve-breaks;
+}
+#menu-button
+{
+	float: left;
+	background-image: url('../img/ic_menu_wht_1x.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 24px;
+	display: inline-block;
+	height: 24px;
+    width: 24px;
+	opacity: 0.75;
+	margin: 11px 24px;
+    padding: 17px;
+	cursor: pointer;
+	-webkit-user-drag: none;
+    border-radius: 20px;
+}
+#menu-button:hover { opacity: 1; }
+#menu-button:active { background-color: rgba(0, 0, 0, 0.05); }
+
+/*
+| -------------------------------------------------------------------
+| CUSTOM
+| -------------------------------------------------------------------
+*/
+.content
+{
+    position:relative;
+    width: 80%;
+    min-height: 100%;
+    height: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 75px 30px 15px 30px;
+    border: 0px;
+    text-align: left;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    box-shadow:0 0px 4px rgba(0, 0, 0, 0.1), 0 0 8px rgba(0, 0, 0, 0.1);
+    
+    background: url('../../bg_all.png');
+    background-position: center 100px;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-color: #FFF;
+}
+.title
+{
+    width: 100%;
+    height: 50px;
+    border-bottom: solid 1px #CCCCCC;
+    line-height: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #4D9DE0;
+    padding: 0px 15px 0px 15px;
+    margin-bottom: 20px;
+}
+.link-delete
+{
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url('../img/ic_highlight_remove_black_24dp.png') center center;
+    background-size: 24px;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+.link-edit
+{
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url('../img/ic_mode_edit_black_24dp.png') center center;
+    background-size: 24px;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+.link-process
+{
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url('../img/ic_settings_black_24dp.png') center center;
+    background-size: 24px;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+footer
+{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 20px;
+    width: 100%;
+    background-color: #D1D7EB;
+    color: gray;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 20px;
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+/*
+| -------------------------------------------------------------------
+| SIDE BAR
+| -------------------------------------------------------------------
+*/
+#side-bar
+{
+    position: fixed;
+    top: 0px;
+    left: -250px;
+	width: 250px;
+	height: 100%;
+	color: #797979;
+    border: 0px;
+    opacity: 0;
+    background-color: #FFF;
+	z-index: 999;
+	padding-top: 60px;
+    box-shadow:0 0 20px #CCCCCC;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-bottom: 0px;
+}
+#side-bar-head
+{
+	width: 250px;
+	height: 120px;
+    background: #FF9969;
+    padding: 7px;
+}
+#side-bar-head .user-photo
+{
+    background-image: url('../img/ic_action_person.png');
+    background-color: rgba(244, 95, 64, 0.2);
+    background-position: center;
+    background-size: 52px;
+	width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 12px;
+}
+#side-bar-head .user-name
+{
+    float: left;
+    margin-left: 60px;
+    margin-top: -35px;
+    display: inline-block;
+    max-width: 185px;
+	font-size: 13px;
+	line-height: 22px;
+	font-weight: normal;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: rgba(244, 95, 64, 0.2);
+    color: #FFF;
+}
+#side-bar-head .user-name:hover{background-color: rgba(244, 95, 64, 0.5);}
+#side-bar-head .site-title
+{
+    float: left;
+    margin-left: -7px;
+    margin-top: 21px;
+    width: 250px;
+    height: 30px;
+	font-size: 13px;
+	line-height: 30px;
+    padding-left: 10px;
+	font-weight: bold;
+    color: #FFF;
+    border: 0px;
+    border-radius: 2px;
+    background-color: rgba(244, 95, 64, 0.2);
+    cursor: default;
+}
+/*
+| -------------------------------------------------------------------
+| USER OPTIONS
+| -------------------------------------------------------------------
+*/
+#side-bar-head #user-option
+{
+    position: absolute;
+    left: 67px;
+    top: 119px;
+    width: 170px;
+    z-index: 1004;
+    background: #FFF;
+    border-radius: 2px;
+    box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+    display: none;
+}
+#side-bar-head #user-option li
+{
+    width: 100%;
+    height: 35px;
+}
+#side-bar-head #user-option li a
+{
+    display:block;
+    width: 100%;
+    height: 100%;
+    line-height: 35px;
+    padding-left: 40px;
+    border-radius: 2px;
+    color: #666666;
+}
+#side-bar-head #user-option li a:hover
+{
+    background-color: #47B0E2;
+    color: #FFF;
+}
+#side-bar-head #user-option li .selected
+{
+    background: url('../img/ic_action_accept.png') no-repeat;
+    background-size: 20px;
+    background-position: center left 10px;
+}
+#side-bar-head #user-option li .selected:hover
+{
+    background: url('../img/ic_action_accept_white.png') no-repeat #47B0E2;
+    background-size: 20px;
+    background-position: center left 10px;
+}
+#side-bar-head #user-option li .logout
+{
+    background: url('../img/ic_secure.png') no-repeat;
+    background-size: 20px;
+    background-position: center left 10px;
+}
+#side-bar-head #user-option li .logout:hover
+{
+    background: url('../img/ic_action_secure.png') no-repeat #47B0E2;
+    background-size: 20px;
+    background-position: center left 10px;
+}
+/*
+| -------------------------------------------------------------------
+| MENU - SIDEBAR
+| -------------------------------------------------------------------
+*/
+#side-bar .menu
+{
+	width: 250px;
+	height: 100%;
+	max-height: 63%;
+	padding: 0px;
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+#side-bar .menu-option
+{
+	display: block;
+	width: 250px;
+	height: 57px;
+	cursor: pointer;
+    line-height: 57px;
+}
+#side-bar .menu-option a
+{
+	display: inline-block;
+	width: 250px;
+	height: 57px;
+	
+}
+#side-bar .menu-option .menu-label
+{
+    display: inline-block;
+    width: 190px;
+    height: 57px;
+    line-height: 57px;
+    font-weight: bold;
+}
+#side-bar .menu-option:hover 
+{
+	background: #F2F1EF;
+	color: #F38546;
+    text-decoration: none !important;
+}
+#side-bar .menu-option .icon
+{
+    float: left;
+    display: inline-block;
+    background-size: 40px !important;
+    width: 40px;
+    height: 40px;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background: gray;
+    -webkit-user-drag: none;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+/*
+| -------------------------------------------------------------------
+| FLOATING ACTION BUTTON
+| -------------------------------------------------------------------
+*/
+.fab-area
+{
+    width: 63px;
+    height: auto;
+    bottom: 27px;
+    right: 22px;
+    position: fixed;
+    border-radius: 20px;
+}
+.fab-area:hover
+{
+    height: 50%;
+}
+
+.fab-normal {
+    width: 56px;
+    height: 56px;
+    line-height: 56px;
+    position: fixed;
+    bottom: 30px;
+    right: 25px;
+    border: 0px;
+    background-color: #47B0E2;
+    border-radius: 50%;
+    box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+    text-align: center;
+    cursor: pointer;
+    z-index: 1000;
+}
+.fab-normal img
+{
+    width: 24px;
+    height: 24px;
+    transform: rotate(0deg); 
+
+    transition-property: transform;
+    transition-duration: 0.25s;
+    transition-timing-function: linear;
+}
+.fab-area:hover .fab-normal img
+{
+    transform: rotate(140deg);
+
+    transition-property: transform;
+    transition-duration: 0.25s;
+    transition-timing-function: linear;
+}
+
+.fab-mini-box
+{
+    display: none;
+    width: auto;
+    height: auto;
+    bottom: 100px;
+    right: 32px;
+    position: fixed;
+}
+.fab-area:hover .fab-mini-box
+{
+    display: block;
+
+    transition-property: display;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in;
+}
+.fab-container
+{
+    display: block;
+    width: auto;
+    height: auto;
+    border: 0px;
+    text-align: right;
+    margin-left: auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.fab-mini img
+{
+    width: 24px;
+    height: 24px;
+    max-width: 24px !important;
+    max-height: 24px !important;
+    opacity: 0;
+}
+.fab-area:hover .fab-mini, .fab-area:hover .fab-mini img
+{
+    opacity: 1;
+    
+    transition-property: opacity;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+.fab-mini
+{
+    opacity: 0;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    padding: 0px;
+    border: 0px;
+    background-color: #F38546;
+    border-radius: 50%;
+    box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+    text-align: center;
+    color: #FFF;
+    font-size: 17px;
+    font-weight: bold;
+}
+.fab-mini:hover
+{
+    background: #F2783C;
+}
+.fab-mini-box .label
+{
+    display: inline-block;
+    margin-right: 7px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #FFF;
+    font-size: 12px;
+    padding: 5px;
+    box-shadow: 0 0 2px rgba(0,0,0,.14),0 2px 2px rgba(0,0,0,.28);
+    border-radius: 2px;
+}
+.fab-mini-box .label
+{
+    color: #FFF;
+}
+
+/*
+| -------------------------------------------------------------------
+| SUGESTIONS
+| -------------------------------------------------------------------
+*/
+.sugestion-wrapper
+{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px 30px 0px 0px;
+    z-index: 2000;
+}
+.search-sugestion
+{
+    margin: 0px;
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+    border-radius: 0px 0px 5px 5px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: none;
+    box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+}
+.search-sugestion-modal
+{
+    position: absolute;
+    margin: 0px;
+    width: 67%;
+    height: auto;
+    max-height: 150px;
+    border-radius: 0px 0px 5px 5px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: none;
+    box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+}
+.sugestion-list{ margin: 0px; padding: 0px; }
+.sugestion
+{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 5px 7px 5px 15px;
+    cursor: pointer;
+    background: #FFF;
+}
+.sugestion:hover
+{
+    background-color: #47B0E2;
+    color: #FFF;
+}
+
+/*
+| -------------------------------------------------------------------
+| TABLETS
+| -------------------------------------------------------------------
+*/
+@media (max-width: 800px) {
+    .content {
+        position:relative;
+        width: 100%;
+        min-height: 100%;
+        height: auto;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 75px 30px 15px 30px;
+	    background-color: #FFF;
+        border: 0px;
+        text-align: left;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        box-shadow:0 0px 4px rgba(0, 0, 0, 0.1), 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .fab-container .label
+    {
+        display: inline-block !important;
+        margin-right: 7px;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: #FFF;
+        font-size: 12px;
+        padding: 5px;
+        box-shadow: 0 0 2px rgba(0,0,0,.14),0 2px 2px rgba(0,0,0,.28);
+        border-radius: 2px;
+    }
+}
+
+/*
+| -------------------------------------------------------------------
+| CELLPHONE
+| -------------------------------------------------------------------
+*/
+@media (max-width: 600px) {
+    .align-parent-bottom
+    { 
+        position: absolute; 
+        bottom: 10px; 
+        left: 7px; 
+        right: 7px;
+        margin-top: 45px; 
+    }
+}

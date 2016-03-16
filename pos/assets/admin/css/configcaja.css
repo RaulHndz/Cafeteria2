@@ -1,0 +1,23 @@
+.cajacontainer{
+
+	width: 100%;
+	height: auto;
+	text-align: center !important;
+	
+}
+
+.cajabody{
+
+	width: 600px;
+	height: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.30);
+	background-color: #fff;
+
+}
+
+.facheadb{
+	text-align: right;
+}

@@ -1,0 +1,174 @@
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
+class Ajax extends CI_Controller {
+
+	public function __construct()
+	{
+		parent::__construct();
+
+		if(!$this->session->userdata('logged_in2'))
+        {
+            redirect(base_url() . 'user/');
+            exit;
+        }
+	}
+
+	public function index()
+	{
+		redirect(base_url(), 'refresh');
+	}
+
+	public function get_product()
+	{
+		$codigo = $this->input->post('codigo');
+
+		$this->load->model('ProductModel');
+        $product = $this->ProductModel->get($codigo);
+        if($product)
+			echo json_encode($product);
+		else
+			echo json_encode(array('status' => 'error'));
+	}
+
+	public function edit_product()
+	{
+		$codigo = $this->input->post('codigo');
+
+		$this->load->model('ProductModel');
+        $product = $this->ProductModel->getEditable($codigo);
+        
+        if($product)
+			echo json_encode($product);
+		else
+			echo json_encode(array('status' => 'error'));
+	}
+
+	public function get_category()
+	{
+		$codigo = $this->input->post('codigo');
+
+		$this->load->model('CategoryModel');
+        $category = $this->CategoryModel->get($codigo);
+        if($category)
+			echo json_encode($category);
+		else
+			echo json_encode(array('status' => 'error'));
+	}
+
+	public function edit_category()
+	{
+		$codigo = $this->input->post('codigo');
+
+		$this->load->model('CategoryModel');
+        $category = $this->CategoryModel->getEditable($codigo);
+        
+        if($category)
+			echo json_encode($category);
+		else
+			echo json_encode(array('status' => 'error'));
+	}
+
+	public function get_cellar()
+	{
+		$codigo = $this->input->post('codigo');
+
+		$this->load->model('CellarModel');
+        $cellar = $this->CellarModel->get($codigo);
+        if($cellar)
+			echo json_encode($cellar);
+		else
+			echo json_encode(array('status' => 'error'));
+	}
+
+	public function edit_cellar()
+	{
+		$codigo = $this->input->post('codigo');
+
+		$this->load->model('CellarModel');
+        $cellar = $this->CellarModel->getEditable($codigo);
+        
+        if($cellar)
+			echo json_encode($cellar);
+		else
+			echo json_encode(array('status' => 'error'));
+	}
+
+	public function get_client()
+	{
+		$codigo = $this->input->post('codigo');
+
+		$this->load->model('ClientModel');
+        $client = $this->ClientModel->get($codigo);
+        if($client)
+			echo json_encode($client);
+		else
+			echo json_encode(array('status' => 'error'));
+	}
+
+	public function edit_client()
+	{
+		$codigo = $this->input->post('codigo');
+
+		$this->load->model('ClientModel');
+        $client = $this->ClientModel->getEditable($codigo);
+        
+        if($client)
+			echo json_encode($client);
+		else
+			echo json_encode(array('status' => 'error'));
+	}
+
+	public function get_caja()
+	{
+		$codigo = $this->input->post('codigo');
+
+		$this->load->model('CajaModel');
+        $caja = $this->CajaModel->get($codigo);
+        if($caja)
+			echo json_encode($caja);
+		else
+			echo json_encode(array('status' => 'error'));
+	}
+
+	public function edit_caja()
+	{
+		$codigo = $this->input->post('codigo');
+
+		$this->load->model('CajaModel');
+        $caja = $this->CajaModel->getEditable($codigo);
+        
+        if($caja)
+			echo json_encode($caja);
+		else
+			echo json_encode(array('status' => 'error'));
+	}
+
+	public function get_tienda()
+	{
+		$codigo = $this->input->post('codigo');
+
+		$this->load->model('TiendaModel');
+        $tienda = $this->TiendaModel->get($codigo);
+        if($tienda)
+			echo json_encode($tienda);
+		else
+			echo json_encode(array('status' => 'error'));
+	}
+
+	public function edit_tienda()
+	{
+		$codigo = $this->input->post('codigo');
+
+		$this->load->model('TiendaModel');
+        $tienda = $this->TiendaModel->getEditable($codigo);
+        
+        if($tienda)
+			echo json_encode($tienda);
+		else
+			echo json_encode(array('status' => 'error'));
+	}
+
+}
+
+/* End of file ajax.php */
+/* Location: ./application/controllers/ajax.php */
